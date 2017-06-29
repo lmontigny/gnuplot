@@ -18,7 +18,7 @@ set key bottom
 set autoscale y 
 
 plot 'data.txt' u 1:2 w l smooth bezier lw 2 title 'N9000', \
-     'data.txt' u 1:3 w l smooth bezier lw 2 title 'N3000'
+     'data.txt' u 1:(\$7/1000) w l smooth bezier lw 2 title 'N3000'
 
 set output
 
